@@ -1,0 +1,19 @@
+class Solution {
+    public int whileLoop(int d) {
+        int count = 0;
+        int num = 0;
+        int sum = 0;
+
+        if(d == 0) num = 10;
+        else num = d;
+
+        while(count < 50){
+            if(num % 10 == d){
+                sum += num;
+                count++;
+            }
+            num += 1;
+        }
+        return sum;
+    }
+}
